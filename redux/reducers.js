@@ -10,12 +10,12 @@ const rootReducer = (state = initialState, action) => {
     case spookyTypes.SET_STEP:
       return {
         ...state,
-        steps: action.steps + 1,
+        steps: state.steps + 1,
       };
     case spookyTypes.SET_SOUND:
       return {
         ...state,
-        spookySounds: spookySounds.push(action.sound),
+        spookySounds: [...state.spookySounds, action.sound],
       };
     default:
       return state;
