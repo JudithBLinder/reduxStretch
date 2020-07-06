@@ -1,5 +1,6 @@
 const spookyTypes = {
-  //code types here
+  SET_STEP: 'SET_STEP',
+  SET_SOUND: 'SET_SOUND',
 };
 
 module.exports = { spookyTypes };
